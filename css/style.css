@@ -33,6 +33,8 @@ body {
 
     position: relative;
     height: 100vh;
+
+    overflow: hidden;
 }
 
 /*=== HEADER =====================*/
@@ -79,7 +81,6 @@ header .button:hover {
 
     opacity: 1;
     visibility: visible;
-    overflow: hidden;
 
     position: fixed;
     bottom: 0;
@@ -133,6 +134,7 @@ header .button:hover {
 /*=== MAIN =====================*/
 main {
     width: 100%;
+    overflow: hidden;
 }
 
 /*=== SECTION HOME =====================*/
