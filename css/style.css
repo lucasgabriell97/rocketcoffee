@@ -136,9 +136,9 @@ main {
 
 /*=== SECTION HOME =====================*/
 #home .text {
-    width: 37.3rem;
+    width: 28.3rem;
     
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 400;
     text-align: center;
     
@@ -146,7 +146,7 @@ main {
 
     color: var(--text-color);
 
-    margin: 7rem auto;
+    margin: 4rem auto;
 }
 
 #home .button {
@@ -177,15 +177,15 @@ main {
 }
 
 #home .title {
-    margin-top: 7rem; 
-    margin-bottom: 2.5rem; 
+    margin-top: 4rem; 
+    margin-bottom: 2rem; 
 
     color: var(--text-color);
 
     text-align: center;
-    font-size: 5rem;
+    font-size: 3.7rem;
     font-weight: 700;
-    line-height: 6.8rem;
+    line-height: 4.4rem;
     letter-spacing: -0.03em;
 }
 
@@ -206,7 +206,7 @@ main {
 
     margin-inline: auto;
 
-    width: 37.2rem;
+    width: 34.2rem;
 }
 
 #home .blur-mobile img {
