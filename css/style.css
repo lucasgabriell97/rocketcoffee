@@ -1,0 +1,385 @@
+/*=== RESET =====================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/*=== VARIABLES =====================*/
+:root {
+    --backgrond: #000;
+    --text-color: #FFF;
+    --button: #8257E5;
+    --border: #29292E;
+    --border-menu-mobile: hsla(240, 9%, 89%, 0.2);
+    --text-color-menu-mobile: #E1E1E6;
+
+    font-size: 62.5%;
+}
+
+/*=== BASE =====================*/
+body {
+    background: var(--backgrond);
+
+    font-family: 'Manrope', sans-serif;
+
+    position: relative;
+    height: 100vh;
+}
+
+/*=== HEADER =====================*/
+header {
+    width: 100%;
+    height: 7.8rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-inline: 2rem;
+    border-bottom: 1px solid var(--border-menu-mobile);
+}
+
+header .logo-desktop {
+    display: none;
+}
+
+header .menu {
+    opacity: 0;
+    visibility: hidden;
+    bottom: -50rem;
+
+    transition: 0.2s;
+}
+
+header .menu a {
+    color: var(--backgrond);
+}
+
+header .button {
+    display: none;
+}
+
+header .button:hover {
+    background-color: rgb(130, 87, 229, 0.5);
+}
+
+
+/*=== MENU SHOW =====================*/
+.menu.show-menu {
+    background-color: var(--backgrond);
+
+    opacity: 1;
+    visibility: visible;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+
+    height: calc(100vh - 7.8rem);
+    width: 100vw;
+}
+
+.menu.show-menu ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu.show-menu ul li {
+    border-bottom: 1px solid var(--border-menu-mobile);
+    padding: 1.5rem 0 1.5rem 2rem;
+
+    cursor: pointer;
+}
+
+.menu.show-menu ul li:hover {
+    border-left: 3px solid #8257E5;
+    padding-left: 1.7rem;
+}
+
+.menu.show-menu ul li a {
+    color: var(--text-color-menu-mobile);
+
+    font-size: 1.2rem;
+}
+
+.menu.show-menu ul li a:hover {
+    color: var(--text-color);
+
+}
+
+.menu-button {
+    display: none;
+
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-button.show-button {
+    display: block;
+}
+
+/*=== MAIN =====================*/
+main {
+    width: 100%;
+}
+
+/*=== SECTION HOME =====================*/
+#home .text {
+    width: 37.3rem;
+    
+    font-size: 3rem;
+    font-weight: 400;
+    text-align: center;
+    
+    letter-spacing: 0.2rem;
+
+    color: var(--text-color);
+
+    margin: 7rem auto;
+}
+
+#home .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    padding: 1rem 3rem;
+
+    border: 1px solid var(--button);
+    border-radius: 0.6rem;
+
+    width: fit-content;
+    margin: auto;
+
+    color: var(--text-color);
+
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+
+    transition: 0.3s;
+}
+
+#home .button:hover {
+    background-color: rgb(130, 87, 229, 0.5);
+}
+
+#home .title {
+    margin-top: 7rem; 
+    margin-bottom: 2.5rem; 
+
+    color: var(--text-color);
+
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 6.8rem;
+    letter-spacing: -0.03em;
+}
+
+#home .title span {
+    color: var(--backgrond);
+
+    text-shadow: -1px -1px 0 var(--button), 1px -1px 0 var(--button), -1px 1px 0 var(--button), 1px 1px 0 var(--button);
+    letter-spacing: -0.03em;
+}
+
+#home .coffee-cup img {
+    position: absolute; 
+    /* top: -5px; */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+
+    margin-inline: auto;
+
+    width: 37.2rem;
+}
+
+#home .blur-mobile img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+
+    width: 100%;
+    height: 32.1rem;
+}
+
+#home .blur-desktop img {
+    display: none;
+}
+
+/* ===================== MEDIA QUERIES =====================*/
+
+/* === MEDIUM DEVICES - TABLETS ===================== */
+@media (min-width: 768px) {
+    /*=== SECTION HOME =====================*/
+    #home .text {
+        width: 40.3rem;
+        
+        font-size: 3.5rem;
+    }
+
+    #home .title { 
+        font-size: 7rem;
+        line-height: 8.8rem;
+    }
+
+    #home .coffee-cup img {
+        width: 55rem;
+    }
+
+    #home .blur-mobile img {
+        height: 40.1rem;
+    }
+}
+
+/* === LARGE DEVICES - DESKTOPS ===================== */
+@media (min-width: 1024px) {
+    /*=== HEADER =====================*/
+    header {
+        width: 100%;
+        height: 12.8rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        padding-inline: 5rem;
+        border-bottom: none;
+    }
+
+    header .logo-mobile {
+        display: none;
+    }
+
+    header .logo-desktop {
+        display: block;
+    }
+
+    header .menu {
+        opacity: 1;
+        visibility: visible;
+        bottom: -50rem;
+
+        transition: 0.2s;
+    }
+
+    header .menu ul {
+        display: flex;
+        gap: 4.5rem;
+    }
+
+    header .menu ul li {
+        font-size: 1.4rem;
+
+        z-index: 1;
+    }
+
+    header .menu ul li a {
+        color: var(--text-color);
+    }
+
+    header .menu ul li a:hover {
+        color: var(--button);
+    }
+
+    header .button {
+        display: block;
+        padding: 1rem 3rem;
+
+        z-index: 1;
+    
+        border: 1px solid var(--button);
+        border-radius: 0.6rem;
+    
+        color: var(--text-color);
+    
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 0.1rem;
+    
+        transition: 0.3s;
+    }
+    
+    header .button:hover {
+        background-color: rgb(130, 87, 229, 0.5);
+    }
+
+    /*=== MENU SHOW =====================*/
+    .menu.show-menu {
+        background-color: var(--backgrond);
+
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .menu-button.show-button {
+        display: none;
+    }
+
+    /*=== SECTION HOME =====================*/
+    #home .text {
+        display: none;
+    }
+
+    #home .button {
+        display: none;
+    }
+
+    #home .title {
+        margin-top: 4rem; 
+        margin-bottom: 2.5rem; 
+
+        font-size: 8rem;
+        line-height: 10.9rem;
+    }
+
+    #home .coffee-cup img {
+        position: absolute; 
+        /* top: -5px; */
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+
+        margin-inline: auto; 
+
+        width: 70.7rem;
+    }
+
+    #home .blur-mobile img {
+        display: none;
+    }
+
+    #home .blur-desktop img:nth-child(1) {
+        display: block;
+
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    #home .blur-desktop img:nth-child(2) {
+        display: block;
+
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
