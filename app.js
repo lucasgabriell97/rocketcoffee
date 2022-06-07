@@ -28,3 +28,10 @@ for(const link of links) {
         btnOpen.classList.add('show-button')
     })
 }
+
+const checkbox = document.querySelector('#checkbox')
+const body = document.querySelector('body')
+
+checkbox.addEventListener('change', () => {
+    body.classList.toggle('light');
+})

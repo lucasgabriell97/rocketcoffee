@@ -15,7 +15,7 @@ ul {
 
 /*=== VARIABLES =====================*/
 :root {
-    --backgrond: #000;
+    --backgrond: #101010;
     --text-color: #FFF;
     --button: #8257E5;
     --border: #29292E;
@@ -27,7 +27,8 @@ ul {
 
 /*=== BASE =====================*/
 body {
-    background: var(--backgrond);
+    background-color: var(--backgrond);
+    overflow: hidden;
 
     font-family: 'Manrope', sans-serif;
 
@@ -53,8 +54,8 @@ header .logo-desktop {
 }
 
 header .menu {
-    opacity: 0;
-    visibility: hidden;
+    opacity: 0; 
+    visibility: hidden; 
     bottom: -50rem;
 
     transition: 0.2s;
@@ -146,7 +147,7 @@ main {
 
     color: var(--text-color);
 
-    margin: 4rem auto;
+    margin: 5rem auto;
 }
 
 #home .button {
@@ -177,7 +178,7 @@ main {
 }
 
 #home .title {
-    margin-top: 4rem; 
+    margin-top: 5rem; 
     margin-bottom: 2rem; 
 
     color: var(--text-color);
@@ -230,14 +231,17 @@ main {
 @media (min-width: 768px) {
     /*=== SECTION HOME =====================*/
     #home .text {
-        width: 40.3rem;
+        width: 35.3rem;
         
-        font-size: 3.5rem;
+        font-size: 3rem;
+        margin: 7rem auto;
     }
 
     #home .title { 
         font-size: 7rem;
         line-height: 8.8rem;
+
+        margin-top: 7rem; 
     }
 
     #home .coffee-cup img {
@@ -273,6 +277,7 @@ main {
     }
 
     header .menu {
+        display: block;
         opacity: 1;
         visibility: visible;
         bottom: -50rem;
@@ -347,7 +352,7 @@ main {
         margin-bottom: 2.5rem; 
 
         font-size: 8rem;
-        line-height: 10.9rem;
+        line-height: 9.7rem;
     }
 
     #home .coffee-cup img {
