@@ -8,7 +8,8 @@
 
 ## 📚 Sobre o projeto
 
-O desafio se trata de um cartão de perguntas, totalmente responsivo e com a funcionalidade de exibir e esconder a resposta quando o usuário clicar na pergunta. 
+Desafio do curso Discover da Rocketseat.
+Se trata de uma pequena landing page, nesse desafio eu pude colocar em prática muita coisa que aprendi no curso e nos eventos da NLW, principalmente a funcionalidade do menu mobile.
 
 ## 💼 Tecnologias utilizadas
 
