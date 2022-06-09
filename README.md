@@ -9,7 +9,7 @@
 ## 📚 Sobre o projeto
 
 Desafio do curso Discover da Rocketseat.
-Se trata de uma pequena landing page, nesse desafio eu pude colocar em prática muita coisa que aprendi no curso e nos eventos da NLW, principalmente a funcionalidade do menu mobile.
+O projeto é uma homepage de uma marca de café, nele eu pude colocar em prática muita coisa que aprendi no curso e nos eventos da NLW, principalmente a funcionalidade do menu mobile.
 
 ## 💼 Tecnologias utilizadas
 
