@@ -1,5 +1,5 @@
 <h1 align="center">
-  💻<br>RocketCoffee
+  ☕<br>RocketCoffee
 </h1>
 
 <div align="center">
@@ -10,12 +10,16 @@
 
 ## 📚 Sobre o projeto
 
-Desafio do curso Discover da Rocketseat.
+Desafio do curso Discover da Rocketseat. 
 O projeto é uma homepage de uma marca de café, nele eu pude colocar em prática muita coisa que aprendi no curso e nos eventos da NLW, principalmente a funcionalidade do menu mobile. 🚀
+
+## ⚙️ Funcionalidade
+
+☑︎ Menu Toggle para dispositivos menores;
 
 ## 🛠️ Tecnologias utilizadas
 
-- HTML;
-- CSS;
-- JavaScript;
-- Animate CSS;
+- HTML
+- CSS
+- JavaScript
+- Animate CSS
